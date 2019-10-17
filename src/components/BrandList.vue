@@ -11,11 +11,14 @@
         <h2 class="headline font-weight-bold mb-3">Brand List</h2>
 
         <v-layout justify-center>
-          <BrandCard
-            v-for="(next, i) in this.$store.state.brand"
-            :key="i"
-            :id="i"
-          />
+          <div v-if="this.$store.state.brand.length == 0">Loading data ... </div>
+          <div v-else>
+            <BrandCard
+              v-for="(next, i) in this.$store.state.brand"
+              :key="i"
+              :id="i"
+            />
+          </div>
         </v-layout>
       </v-flex>
     </v-layout>
