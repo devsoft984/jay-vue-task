@@ -18,7 +18,7 @@
               The list of state Registration
             </h2>
             <v-card
-              class="ma-3 text-xs-left"
+              class="ma-3 text-xs-left card"
               v-for="(next, i) in this.$store.state.brand[$route.params.id].state_registrations"
               :key="i"
             >
@@ -42,3 +42,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.card {
+  text-align: left;
+  padding: 10px;
+}
+</style>
