@@ -1,5 +1,6 @@
 <template>
-  <v-container>
+  <div v-if="this.$store.state.brand.length == 0">Loading data ... </div>
+  <v-container v-else>
     <v-layout
       text-center
       wrap
