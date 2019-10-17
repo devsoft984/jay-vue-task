@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import BrandList from './components/BrandList.vue';
-import Detail from './components/Detail.vue';
+import BrandMain from '../components/BrandMain.vue';
+import BrandDetail from '../components/BrandDetail.vue';
 
 Vue.use(Router);
 
@@ -12,12 +12,12 @@ const router = new Router({
         {
             path: '/',
             name: 'home',
-            component: BrandList
+            component: BrandMain
         },
         {
             path: '/detail/:id',
             name: 'detail',
-            component: Detail,
+            component: BrandDetail,
         },
     ]
 });
