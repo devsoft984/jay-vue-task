@@ -26,7 +26,7 @@ export default {
   mounted() {
     if (this.$store.state.brand.length == 0) {
       this.axios
-        .get('http://private-bc245d-brewoptixv2.apiary-mock.com/brands')
+        .get(process.env.VUE_APP_API_URL)
         .then(response => {
           this.$store.state.brand = response.data
         })
