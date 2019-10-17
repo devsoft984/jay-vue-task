@@ -1,5 +1,8 @@
 # vue-test-task
 
+## API Endpoint
+Please change VUE_APP_API_URL in .env file
+
 ## Project setup
 ```
 yarn install
